@@ -90,7 +90,6 @@ p square_array(@all_number)
 
 
 def square_total(arr)
-  all_square = []
   all_square = square_array(arr)
   total_square = 0
   all_square.each do |n|
@@ -105,7 +104,11 @@ p square_total(@all_number)
 
 
 
+def test_square_total()
+  
 
+
+end
 
 
 
