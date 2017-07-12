@@ -8,6 +8,7 @@
 -[]  create new version.
 -[] ask at least one question about git
 -[x] make a new commit
+-[] another activitie
 
 
 
