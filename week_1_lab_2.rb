@@ -40,21 +40,21 @@ puts "Task 1:´"
 
 loop do
  puts "Add some numbers to the Array (y/n)? "
- answer=gets.chomp
+ answer = gets.chomp
 
  if answer != "y"
-    puts "Ok , Bye"
+      puts "Ok , Bye"
     break
   end
 
 puts "Give me first numbers"
-n1=gets.chomp
+n1 = gets.chomp
 
 puts "Give me second numbers"
-n2=gets.chomp
+n2 = gets.chomp
 
 def array_maker(n1,n2)
-  @all_number=(n1..n2).to_a
+  @all_number = (n1..n2).to_a
 end
 
 p array_maker(n1,n2)
@@ -81,20 +81,26 @@ def test_local(arr,num)
 
 end
 
-@all_square = []
-
-def square_array( arr)
-  @all_square = arr.map {|n| n.to_i*n.to_i}
+def square_array(arr)
+  arr.map {|n| n.to_i * n.to_i}
 end
 
 puts "The Square Array is :"
 p square_array(@all_number)
 
+
 def square_total(arr)
+  
 
+  total_square = 0
+  arr.each do |n|
+    total_square = n.to_i + total_square
   end
+  total_square
+end
 
-
+puts "The Total Square Array is :"
+p square_total(@all_number)
 
 
 
