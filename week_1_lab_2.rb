@@ -53,11 +53,11 @@ n1=gets.chomp
 puts "Give me second numbers"
 n2=gets.chomp
 
-def total(n1,n2)
+def array_maker(n1,n2)
   @all_number=(n1..n2).to_a
 end
 
-p total(n1,n2)
+p array_maker(n1,n2)
 
 end
 
@@ -66,14 +66,20 @@ end
 ############################# B1 #########################################
 
 
-
-
-
-
-def test_local
+def total
+  total_n=0
+  @all_number.each do |n|
+  total_n=n.to_i+total_n
+  end
+ total_n
 end
 
-def square_total
+  puts "The total is :#{total}"
+
+def test_local()
+end
+
+def square_total()
 end
 
 
