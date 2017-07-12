@@ -36,31 +36,44 @@ puts total_rating(@rating)
 
 puts "Task 1:´"
 
-number=0
-puts "Give me numbers"
-number=gets.chomp
+@all_number=[]
 
-all_number=[]
+loop do
+ puts "Add some numbers to the Array (y/n)? "
+ answer=gets.chomp
 
-def total(numbers)
-  number = numbers
-  all_number[] << numbers
-  all_number
+ if answer != "y"
+    puts "Ok , Bye"
+    break
+  end
+
+puts "Give me first numbers"
+n1=gets.chomp
+
+puts "Give me second numbers"
+n2=gets.chomp
+
+def total(n1,n2)
+  @all_number=(n1..n2).to_a
 end
 
-puts total
+p total(n1,n2)
+
+end
+
+
+
+############################# B1 #########################################
+
+
+
+
+
 
 def test_local
-  
-
 end
 
-
-
 def square_total
-
-
-
 end
 
 
