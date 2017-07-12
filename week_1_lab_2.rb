@@ -53,7 +53,7 @@ n1 = gets.chomp
 puts "Give me second numbers"
 n2 = gets.chomp
 
-def array_maker(n1,n2)
+def array_maker(n1 , n2)
   @all_number = (n1..n2).to_a
 end
 
@@ -90,10 +90,10 @@ p square_array(@all_number)
 
 
 def square_total(arr)
-  
-
+  all_square = []
+  all_square = square_array(arr)
   total_square = 0
-  arr.each do |n|
+  all_square.each do |n|
     total_square = n.to_i + total_square
   end
   total_square
@@ -101,6 +101,13 @@ end
 
 puts "The Total Square Array is :"
 p square_total(@all_number)
+
+
+
+
+
+
+
 
 
 
