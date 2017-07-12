@@ -66,25 +66,33 @@ end
 ############################# B1 #########################################
 
 
-def total
-  total_n=0
-  @all_number.each do |n|
-  total_n=n.to_i+total_n
+def total(arr)
+  total_n = 0
+  arr.each do |n|
+  total_n = n.to_i + total_n
   end
  total_n
 end
 
-  puts "The total is :#{total}"
+  puts "The total is..."
+  puts total(@all_number)
 
-def test_local()
+def test_local(arr,num)
+
 end
 
-def square_total()
+@all_square = []
+
+def square_array( arr)
+  @all_square = arr.map {|n| n.to_i*n.to_i}
 end
 
+puts "The Square Array is :"
+p square_array(@all_number)
 
+def square_total(arr)
 
-
+  end
 
 
 
