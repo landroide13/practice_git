@@ -1,10 +1,13 @@
 
--[] create new folder
--[] create a file named todo.txt
--[] add a few items in txt
--[] mark some itmes in todo.txt as done
+-[x] create new folder
+-[x] create a file named todo.txt
+-[x] add a few items in txt
+-[x] mark some itmes in todo.txt as done
 -[] training morning
--[] breakfast
+-[x] breakfast
+-[]  create new version.
+-[] ask at least one question about git
+-[x] make a new commit
 
 
 
